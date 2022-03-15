@@ -18,8 +18,8 @@
 
 .hamburguer {
 
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 3rem;
     position: fixed;
     z-index: 100;
     right: 2rem;
@@ -139,7 +139,7 @@ header {
     opacity: 0;
 }
 .banner button:hover{ /*Isso vai mudar quando fazer a ação que no caso é quando o mouse ficar em cima do button*/
-    opacity: 0.85;
+    opacity: 0.8;
 }
 @keyframes zoom {
     0%{
@@ -160,7 +160,7 @@ header {
 }
 
 .sidebar{
-    background-color: white;
+    background-color: #D9E4DED2;
     width: 20rem;
     height: 100vh;
     position: fixed;

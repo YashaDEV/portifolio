@@ -231,3 +231,7 @@ header {
 .show-menu .social-media:hover span{
     opacity: 1;
 }
+.conhecimentos {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}

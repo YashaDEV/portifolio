@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 
 * {
     margin:0;
@@ -15,6 +18,7 @@
     --font-primary:"Montserrat", sans-serif;
     --font-secundary: "Barlow Condensed", sans-serif;
     --font-action: "Fredoka", sans-serif;
+    --font-title: "Montaga", sans-serif;
 }
 
 .hamburguer {
@@ -130,8 +134,8 @@ header {
     font-weight: 400;
     color: white;
     background: #3CA55C;  
-    background: -webkit-linear-gradient(to bottom, #B5AC49, #3CA55C);  
-    background: linear-gradient(to bottom, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to top, #B5AC49, #3CA55C);  
+    background: linear-gradient(to top, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
     padding: 1em 3em;
     border-radius: 16px;
@@ -140,7 +144,6 @@ header {
     opacity: 0;
 }
 .banner button:hover{ /*Isso vai mudar quando fazer a ação que no caso é quando o mouse ficar em cima do button*/
-    opacity: 0.8;
 }
 @keyframes zoom {
     0%{
@@ -161,7 +164,7 @@ header {
 }
 
 .sidebar{
-    background-color: #D9E4DED2;
+    background-color: #d9e4deec;
     width: 20rem;
     height: 100vh;
     position: fixed;
@@ -301,7 +304,7 @@ header {
     font-family:'Prompt', sans-serif ;
     font-weight: 600;
     font-size: 15px;
-    width: 20em;
+    width: 22em;
     height: 12rem;
     position: relative;
     left: -3em;
@@ -320,4 +323,66 @@ header {
     padding-top: 5.7em;
     padding-left: 0em;
     border-radius: 3vh;
+}
+::-webkit-scrollbar {
+    width: 17px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(170, 244, 174, 0.7);
+    
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(2, 21, 3, 0.7);
+    border-radius: 5px;
+}
+
+.projetos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    position:relative;
+    width: 18rem;
+    height: 22rem;
+}
+.card-img-wrapper{
+    background-color: #37455e;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px 16px;
+}
+.card-img-wrapper img{
+    border-radius: 6px 16px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.card-info{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, .4);
+
+}
+.card-info h2{
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(239, 241, 239 );
+}
+.card-info h3{
+    font-family: var(--font-primary);
+    font-weight: bolder;
+    font-size: rem;
+    color: rgb(178, 234, 178, 0.9)
+}
+.card-info p{
+    font-family: 'Roboto Condensed';
+    width: 60%;
+    font-weight: 300;
+    color: white;
+}
+.card-info button{
+
 }
